@@ -28,3 +28,7 @@
 #schedule:hover .content2 {
     height: 100px;
 }
+
+.content2:hover {
+    height: 100px;
+}

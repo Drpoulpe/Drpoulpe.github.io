@@ -32,9 +32,9 @@
     transition: ease-in-out 0.3s;
     font-style: bold;
     font-size: 25px;
-    color: white;
+    color: black;
 }
 .sidenav p:hover {
     transform: translateY(-7px);
-    text-shadow: white 1px 0 10px;
+    text-shadow: rgba(253,201,43,255) 1px 0 10px;
 }
