@@ -2,14 +2,12 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     transition: ease-in-out 0.3s;
-    background-color: pink;
     height: 80%;
     display: inline-block;
     width: 80%;
     position: relative;
     border-radius: 15px;
     padding: 5% 8%;
-
 }
 
 .textbox h1 {
