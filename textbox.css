@@ -20,15 +20,3 @@
     font-size: 100%;
     transition: ease-in-out 0.3s;
 }
-
-.content2 {
-    height:0;
-}
-
-#schedule:hover .content2 {
-    height: 100px;
-}
-
-.content2:hover {
-    height: 100px;
-}
