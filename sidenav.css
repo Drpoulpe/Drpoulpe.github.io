@@ -23,6 +23,7 @@
 .content {
     position:absolute;
     top: 14%;
+    padding: 5px;
     left: 10%;
 }
 
