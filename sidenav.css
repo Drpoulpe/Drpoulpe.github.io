@@ -8,6 +8,8 @@
     transition: ease-in-out 0.7s;
     background-color: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/a_art2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 #main {
