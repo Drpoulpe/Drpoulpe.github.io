@@ -1,0 +1,37 @@
+.sidenav {
+    height: 100%;
+    background-color: white;
+    width: 0%;
+    top:0;
+    right:0;
+    position: fixed;
+    transition: ease-in-out 0.7s;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(images/a_art.jpeg);
+}
+
+#main {
+    transition: ease-in-out 0.7s;
+}
+
+#main2{
+    transition: ease-in-out 0.7s;
+}
+
+.content {
+    position:absolute;
+    top: 14%;
+    left: 10%;
+}
+
+.sidenav p {
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    font-style: bold;
+    font-size: 25px;
+    color: white;
+}
+.sidenav p:hover {
+    transform: translateY(-7px);
+    text-shadow: white 1px 0 10px;
+}
