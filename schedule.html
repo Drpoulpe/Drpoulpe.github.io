@@ -20,6 +20,13 @@
                     document.getElementById("main2").style.marginRight = "0";
                 }
             }
+            function changeImage(img) {
+                var img2 = String(img);
+                document.getElementById("artimage").src = "images/" + img2;
+            }
+        </script>
+        <script>
+            function display(id, img) {}
         </script>
     </head>
     <body>
@@ -55,7 +62,7 @@
                 <div class="schedule">
                     <h1 id="cronge">Schedule :</h1>
                     <div class="activities">
-                        <a class="block art" href="art.html">
+                        <a class="block" id="art" href="art.html" hover="">
                             <h1>9:00 - 11:00 / Art Workshops</h1>
                             <p>Paiting activity for aboriginal and neo-australians children to meet each other.</p>
                         </a>
@@ -68,20 +75,20 @@
                             <p>People gather around barbecues to learn each other's origins and culture.</p>
                         </a>
                         <a class="block parade">
-                            <h1>9am - 11am</h1>
+                            <h1>18:00 - 20:00 / Parade</h1>
                             <p>This will be the most significant time of the day for the country.</p>
                         </a>
                         <a class="block opera">
-                            <h1>9am - 11am</h1>
+                            <h1>20:00 - 23:00 / Opera Ballet</h1>
                             <p>The opera will offer and broadcast a special ballet retracing the history of Australia.</p>
                         </a>
                         <a class="block fireworks">
-                            <h1>9am - 11am</h1>
+                            <h1>23:00 / Fireworks</h1>
                             <p>The pyrotechnic show will take place in most of the cities all around the country.</p>
                         </a>
                     </div>
                 </div>
-                <img src="images/sydney.png" class="illustration"/>
+                <img src="" id="artimage">
             </div>
         </div>
     </body>

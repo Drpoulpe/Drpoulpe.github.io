@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="container.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="sidenav.css">
+        <link rel="stylesheet" href="textbox.css">
+        <link rel="stylesheet" href="scrollbar.css">
+        <link rel="stylesheet" href="gridd.css">
+        <script>
+            function sidenavCheck() {
+                var checkBox = document.getElementById("burger");
+                if (checkBox.checked == true){
+                    document.getElementById("Sidenav").style.width = "15%";
+                    document.getElementById("main").style.marginRight = "15%";
+                    document.getElementById("main2").style.marginRight = "15%";
+                } else {
+                    document.getElementById("Sidenav").style.width = "0";
+                    document.getElementById("main").style.marginRight= "0";
+                    document.getElementById("main2").style.marginRight = "0";
+                }
+            }
+        </script>
+        <style>
+            a {
+                all:unset;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Sidenav" class="sidenav">
+            <div class="content">
+                <a href="index.html"><p>- Home</p></a>
+                <a href="schedule.html" id="schedule"><p>- Day schedule</p></a>
+                <div class="content2">
+                    <a href="art.html"><p>- Art Workshops</p></a><br>
+                    <a href="cricket.html"><p>- Cricket match</p></a><br>
+                    <a href="barbies.html"><p>- Barbies</p></a><br>
+                    <a href="max.html"><p>- Parade, Uncle Max commemoration</p></a><br>
+                    <a href="opera.html"><p>- Opera show</p></a><br>
+                    <a href="fireworks.html"><p>- Fireworks</p></a><br>
+                </div>
+                <a href="apply.html"><p>- Applications</p></a>
+                <a href="contact.html"><p>- Contact</p></a>
+            </div>
+        </div>
+        <div class="container" id="main">
+            <div class="header" style="height: 10%; background-color: rgba(253,201,43,255);">
+                <img src="images/abo_austr_flag.png" class="logo">
+                <h1 class="title">The Unity Day</h1>
+                <label class="hamburger">
+                    <input type="checkbox" id="burger" onclick="sidenavCheck()">
+                    <svg viewBox="0 0 32 32">
+                      <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                      <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </div>
+            <div class="background-image" id="main2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cricket.jpeg); ">
+                <div class="page">
+                    <h1 class="doliprane">Cricket Matches</h1>
+                    <div class="imageing">
+                        <img src="images/australia.jpg" class="map">
+                    </div>
+                    
+                    <div class="containing">
+                        <p class="paragraph">At eleven o'clock, the cricket matches will kick off. The matches will be held in major cities across Australia: Perth, Darwin, Adelaide, Melbourne, Hobart, Canberra, Sydney and Brisbane. In each of these cities, there will be a match between two teams of 11 players, which will be broadcast on local TV stations.You may be asking yourself: "How are the players selected? Well, it's very simple. In December, signs will have been put up in town halls and public places calling for volunteers to take part. Then, after collecting the entries, the town halls will draw lots to get 11 Aborigines and 11 Neo-Australians. As they are casual people, they will be coach by the national team two weeks before the event.  There will be 4 training sessions to give a thorough introduction to the sport. The aim of the event is not to showcase the highest level of cricket possible, but to promote inclusiveness and Australian unity, as it is one of the most played sports in the country. It is not an Aboriginal vs. neo-Australian game, but a mixed team game. Also, we know that over 60% of Australians are overweight, so this will make some of them want to take up the sport! </p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
