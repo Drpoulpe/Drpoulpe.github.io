@@ -1,0 +1,96 @@
+.schedule {
+    top: 15%;
+    position: relative;
+    left: 5%;
+    height: 80%;
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+    transition: ease-in-out 0.4s;
+}
+
+#cronge {
+    position: relative;
+    top: 1%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media screen and (aspect-ratio > 1) {
+    .schedule {
+        width: 40%;
+    }
+}
+
+@media screen and (aspect-ratio > 1) and (width < 1100px) {
+    .block h1{
+        font-size: 120%;
+    }
+
+    .block p {
+        font-size: 100%;
+    }
+}
+
+@media screen and (aspect-ratio < 1) and (width < 500px){
+    .block h1{
+        font-size: 120%;
+    }
+    
+    .block p {
+        font-size: 100%;
+    }
+}
+
+.activities {
+    position: relative;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-rows: repeat(6, 15%);
+    top: 2%;
+    height:90%;
+    width: 94%;
+    left: 3%;
+}
+
+.block {
+    transition: ease-in-out 0.2s;
+    position: relative;
+    background-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.block h1 {
+    position: static;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.block p {
+    position:static;
+    margin-left: 7%;
+}
+
+.block:hover {
+    transform: translateY(-7px);
+}
+
+a {
+    all: unset;
+}
+
+
+
+.illustration {
+    position:absolute;
+    display: none;
+    width: 30%;
+    height:auto;
+    top: 30%;
+    right: 10%;
+}
+
+.block:hover + .illustration {
+    display:block;
+}

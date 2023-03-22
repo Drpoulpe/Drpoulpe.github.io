@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="sidenav.css">
         <link rel="stylesheet" href="textbox.css">
         <link rel="stylesheet" href="scrollbar.css">
+        <link rel="stylesheet" href="schedule.css">
         <script>
             function sidenavCheck() {
                 var checkBox = document.getElementById("burger");
@@ -25,7 +26,7 @@
         <div id="Sidenav" class="sidenav">
             <div class="content">
                 <a href="index.html"><p>- Home</p></a>
-                <a href="schedule.html" id="schedule"><p>- Day schedule</p></a>
+                <a href="schedule.html"  id="schedule"><p>- Day schedule</p></a>
                 <div class="content2">
                     <a href="art.html"><p>- Art Workshops</p></a><br>
                     <a href="cricket.html"><p>- Cricket match</p></a><br>
@@ -50,25 +51,37 @@
                     </svg>
                 </label>
             </div>
-            <div class="background-image" id="main2">
-                <div class="grid">
-                    <div class="box one">
-                        <div class="textbox">
-                            <h1>Titre</h1>
-                            <p>Texte</p>
-                        </div>
+            <div class="background-image" id="main2" style="height: 100%;">
+                <div class="schedule">
+                    <h1 id="cronge">Schedule :</h1>
+                    <div class="activities">
+                        <a class="block art" href="art.html">
+                            <h1>9:00 - 11:00 / Art Workshops</h1>
+                            <p>Paiting activity for aboriginal and neo-australians children to meet each other.</p>
+                        </a>
+                        <a class="block cricket">
+                            <h1>11:30 - 13:00 / Cricket Match</h1>
+                            <p>In every major cities, a cricket game will take place with aboriginal and white australians on both teams.</p>
+                        </a>
+                        <a class="block barbies">
+                            <h1>13:00 / Barbies</h1>
+                            <p>People gather around barbecues to learn each other's origins and culture.</p>
+                        </a>
+                        <a class="block parade">
+                            <h1>9am - 11am</h1>
+                            <p>This will be the most significant time of the day for the country.</p>
+                        </a>
+                        <a class="block opera">
+                            <h1>9am - 11am</h1>
+                            <p>The opera will offer and broadcast a special ballet retracing the history of Australia.</p>
+                        </a>
+                        <a class="block fireworks">
+                            <h1>9am - 11am</h1>
+                            <p>The pyrotechnic show will take place in most of the cities all around the country.</p>
+                        </a>
                     </div>
-                    <div class="box two"></div>
-                    <div class="box three"></div>
-                    <div class="box four"></div>
-                    <div class="box five">
-                        <div class="textbox">
-                            <h1>Titre</h1>
-                            <p>Texte</p>
-                        </div>
-                    </div>
-                    <div class="box six"></div>
                 </div>
+                <img src="images/sydney.png" class="illustration"/>
             </div>
         </div>
     </body>

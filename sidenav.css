@@ -10,6 +10,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/a_art2.jpg);
     background-position: center;
     background-size: cover;
+    z-index: 3;
 }
 
 #main {
@@ -28,11 +29,13 @@
 }
 
 .sidenav p {
+    margin-top: 10px;
     cursor: pointer;
     transition: ease-in-out 0.3s;
     font-style: bold;
     font-size: 25px;
-    color: black;
+    color: rgb(200, 200, 2000);
+    z-index: 2;
 }
 .sidenav p:hover {
     transform: translateY(-7px);
@@ -40,15 +43,29 @@
 }
 
 .content2 {
+    z-index: 0;
     height:0;
-    display:none;
+    transition: ease-in-out 0.3s;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
-#schedule:hover .content2 {
-    height: 100px;
+.content2 p {
+    font-size: 15px;
     display: contents;
+    z-index: 1;
+    transition: ease-in-out 0.3s;
+}
+
+#schedule:hover + .content2 {
+    height: 125px;
+    transform:translateZ()
 }
 
 .content2:hover {
-    height: 100px;
+    height: 125px;
+}
+
+.content p:hover {
+    color: rgb(255,255,255)
 }
