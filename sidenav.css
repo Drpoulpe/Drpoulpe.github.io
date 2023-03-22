@@ -1,12 +1,10 @@
 .sidenav {
     height: 100%;
-    background-color: white;
     width: 0%;
     top:0;
     right:0;
     position: fixed;
     transition: ease-in-out 0.7s;
-    background-color: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/a_art2.jpg);
     background-position: center;
     background-size: cover;
@@ -28,42 +26,41 @@
     left: 10%;
 }
 
-.sidenav p {
+.content p {
     margin-top: 10px;
     cursor: pointer;
     transition: ease-in-out 0.3s;
     font-style: bold;
     font-size: 25px;
-    color: rgb(200, 200, 2000);
-    z-index: 2;
+    color: rgb(200, 200, 200);
 }
-.sidenav p:hover {
+.content p:hover {
     transform: translateY(-7px);
     text-shadow: rgba(253,201,43,255) 1px 0 10px;
 }
 
 .content2 {
-    z-index: 0;
     height:0;
     transition: ease-in-out 0.3s;
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 0;
+    display: none;
 }
 
 .content2 p {
     font-size: 15px;
     display: contents;
-    z-index: 1;
     transition: ease-in-out 0.3s;
 }
 
 #schedule:hover + .content2 {
     height: 125px;
-    transform:translateZ()
+    display: block;
 }
 
 .content2:hover {
     height: 125px;
+    display: block;
 }
 
 .content p:hover {
