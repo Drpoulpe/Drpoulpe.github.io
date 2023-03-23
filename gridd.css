@@ -61,3 +61,89 @@
     width: 100%;
     border-radius: 15px;
 }
+
+.point {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(253,201,43,255);
+    border-radius: 50%;
+    cursor: pointer;
+    transition:ease-in-out 0.3s;
+}
+
+.point[data-town="Perth"] {
+    top: 63%;
+    left: 9%;
+}
+
+.point[data-town="Darwin"] {
+    top:7%;
+    left:43%;
+}
+
+.point[data-town="Adelaide"] {
+    top: 70%;
+    left: 60%;
+}
+
+.point[data-town="Melbourne"] {
+    top:79%;
+    left:75%;
+}
+
+.point[data-town="Hobart"] {
+    top:93%;
+    left: 81%;
+}
+
+.point[data-town="Canberra"] {
+    top: 71%;
+    left: 83%;
+}
+
+.point[data-town="Sydney"] {
+    top: 67%;
+    left: 89%;
+}
+
+.point[data-town="Brisbane"] {
+    left: 94%;
+    top: 48%;
+}
+
+.point:hover::after {
+    content: attr(data-town);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background-color: brown;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+  
+.point:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+  
+.point::after {
+    content: attr(data-town);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background-color: brown;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out;
+}
