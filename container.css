@@ -36,7 +36,7 @@
 .two {
     grid-column: 2;
     grid-row: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/australia.jpg);
+    background-image: url(images/reconciliation.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -44,7 +44,7 @@
 .three {
     grid-column: 1;
     grid-row: 2;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/australia.jpg);
+    background-image: url(images/reco_art.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -52,7 +52,7 @@
 .four {
     grid-column: 2;
     grid-row: 2;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/australia.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/crowd.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -60,19 +60,80 @@
 .five {
     grid-column: 1;
     grid-row: 3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/kids3.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .six {
     grid-column: 2;
     grid-row: 3;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/australia.jpg);
+    background-image: url(images/faces.png);
     background-position: center;
     background-size: cover;
 }
 
 .box {
     transition: ease-in-out 0.5s;
+    text-align: center;
+    border-radius: 15px;
 }
 .box:hover {
     transform: translateY(-7px);
+}
+
+.box:hover p{
+    text-shadow: #FC0 1px 0 1px;
+}
+
+.box:hover h1{
+    text-shadow: #FC0 1px 0 10px;
+}
+
+@media screen and (aspect-ratio < 1) {
+    .background-image {
+        height: 350%;
+    }
+    
+    .grid {
+        display: grid;
+        position:relative;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(6, 15%);
+        height: 80%;
+        width: 84%;
+        gap: 4%;
+        left: 8%;
+        top: 12%;
+    }
+    
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .two {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .three {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .four {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .five {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .six {
+        grid-column: 1;
+        grid-row: 6;
+    }
 }

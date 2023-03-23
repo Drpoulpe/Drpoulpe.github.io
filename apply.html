@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="sidenav.css">
         <link rel="stylesheet" href="textbox.css">
         <link rel="stylesheet" href="scrollbar.css">
+        <link rel="stylesheet" href="forms.css">
         <script>
             function sidenavCheck() {
                 var checkBox = document.getElementById("burger");
@@ -55,25 +56,17 @@
                     </svg>
                 </label>
             </div>
-            <div class="background-image" id="main2">
-                <div class="grid">
-                    <div class="box one">
-                        <div class="textbox">
-                            <h1>Titre</h1>
-                            <p>Texte</p>
-                        </div>
-                    </div>
-                    <div class="box two"></div>
-                    <div class="box three"></div>
-                    <div class="box four"></div>
-                    <div class="box five">
-                        <div class="textbox">
-                            <h1>Titre</h1>
-                            <p>Texte</p>
-                        </div>
-                    </div>
-                    <div class="box six"></div>
-                </div>
+            <div class="background-image" id="main2" style="display: flex; justify-content: center; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/road.jpg); height: 100%;">
+                <form class="form">
+                    <span class="title">Apply to cricket team</span>
+                    <label for="username" class="label">Name</label>
+                    <input type="text" id="username" name="username" required="" class="input">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" id="email" name="email" required="" class="input">
+                    <label for="password" class="label">Adress</label>
+                    <input type="adress" id="password" name="password" required="" class="input">
+                    <button type="submit" class="submit">Send application</button>
+                </form>
             </div>
         </div>
     </body>

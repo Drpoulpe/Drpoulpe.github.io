@@ -66,3 +66,18 @@
 .content p:hover {
     color: rgb(255,255,255)
 }
+
+#cringeou {
+    width: "15%";
+    display: none;
+}
+
+@media screen and (aspect-ratio < 1) {
+    .content2 {
+        height: 125px;
+        display: block;
+    }
+    #cringeou {
+        width: 100%;
+    }
+}

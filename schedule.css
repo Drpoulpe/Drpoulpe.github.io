@@ -18,7 +18,7 @@
 
 @media screen and (aspect-ratio > 1) {
     .schedule {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -56,7 +56,6 @@
 .block {
     transition: ease-in-out 0.2s;
     position: relative;
-    background-color: yellow;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -78,16 +77,29 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
 
+#art {
+    background-color:rgba(242,186,225,255);
+}
 
+.cricket {
+    background-color: rgba(255,148,148,255);
+}
 
-#artimage {
-    position: absolute;
-    display: block;
-    width: 40%;
-    height: auto;
-    top: 20%;
-    right: 6%;
-    transition: width ease-in-out 0.3s;
+.barbies {
+    background-color: rgba(171,233,206,255);
+}
+
+.parade {
+    background-color: rgba(254,198,183,255);
+}
+
+.opera {
+    background-color: rgba(216,220,255,255);
+}
+
+.fireworks {
+    background-color: rgba(154,156,180,255);
 }

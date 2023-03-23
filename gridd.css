@@ -35,15 +35,26 @@
     font-size: 100%;
 }
 
+.paragraph2 {
+    color: white;
+    font-size: 80%;
+}
+
 @media screen and (width > 1200px) {
     .paragraph {
         font-size: 150%;
+    }
+    .paragraph2 {
+        font-size: 120%;
     }
 }
 
 @media screen and (width < 400px) {
     .paragraph {
         font-size: 80%;
+    }
+    .paragraph2 {
+        font-size: 60%;
     }
 }
 
