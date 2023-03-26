@@ -68,7 +68,7 @@
 }
 
 #cringeou {
-    width: 15%;
+    height: 0;
     display: none;
 }
 
@@ -80,4 +80,24 @@
     #cringeou {
         width: 100%;
     }
+    .checkbox:checked ~ .sidenav {
+        width: 100%;
+    }
+    .checkbox:checked ~ #main {
+        width: 100%;
+    }
+    .checkbox:checked ~ #main2 {
+        width: 100%;
+    }
+}
+
+.checkbox:checked ~ .sidenav {
+    width: 15%;
+}
+
+.checkbox:checked ~ #main {
+    width: 15%;
+}
+.checkbox:checked ~ #main2 {
+    width: 15%;
 }

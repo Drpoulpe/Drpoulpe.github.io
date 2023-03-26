@@ -32,12 +32,12 @@
 
 .paragraph {
     color: white;
-    font-size: 100%;
+    font-size: auto;
 }
 
 .paragraph2 {
     color: white;
-    font-size: 80%;
+    font-size: auto;
 }
 
 @media screen and (width > 1200px) {
@@ -48,7 +48,7 @@
         font-size: 120%;
     }
 }
-
+/*
 @media screen and (width < 400px) {
     .paragraph {
         font-size: 80%;
@@ -57,7 +57,7 @@
         font-size: 60%;
     }
 }
-
+*/
 .imageing {
     position: relative;
     height: 100%;
