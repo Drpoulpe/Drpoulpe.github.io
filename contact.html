@@ -10,14 +10,28 @@
         <script>
             function sidenavCheck() {
                 var checkBox = document.getElementById("burger");
-                if (checkBox.checked == true){
-                    document.getElementById("Sidenav").style.width = "15%";
-                    document.getElementById("main").style.marginRight = "15%";
-                    document.getElementById("main2").style.marginRight = "15%";
-                } else {
-                    document.getElementById("Sidenav").style.width = "0";
-                    document.getElementById("main").style.marginRight= "0";
-                    document.getElementById("main2").style.marginRight = "0";
+                var cringeoux = window.matchMedia("(aspect-ratio < 1)");
+                if (cringeoux.matches){
+                    if (checkBox.checked == true){
+                        document.getElementById("Sidenav").style.width = "100%";
+                        document.getElementById("main").style.marginRight = "100%";
+                        document.getElementById("main2").style.marginRight = "100%";
+                    } else {
+                        document.getElementById("Sidenav").style.width = "0";
+                        document.getElementById("main").style.marginRight= "0";
+                        document.getElementById("main2").style.marginRight = "0";
+                    }
+                }
+                else {
+                    if (checkBox.checked == true){
+                        document.getElementById("Sidenav").style.width = "15%";
+                        document.getElementById("main").style.marginRight = "15%";
+                        document.getElementById("main2").style.marginRight = "15%";
+                    } else {
+                        document.getElementById("Sidenav").style.width = "0";
+                        document.getElementById("main").style.marginRight= "0";
+                        document.getElementById("main2").style.marginRight = "0";
+                    }
                 }
             }
         </script>
