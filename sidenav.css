@@ -67,37 +67,9 @@
     color: rgb(255,255,255)
 }
 
-#cringeou {
-    height: 0;
-    display: none;
-}
-
 @media screen and (aspect-ratio < 1) {
     .content2 {
         height: 125px;
         display: block;
     }
-    #cringeou {
-        width: 100%;
-    }
-    .checkbox:checked ~ .sidenav {
-        width: 100%;
-    }
-    .checkbox:checked ~ #main {
-        width: 100%;
-    }
-    .checkbox:checked ~ #main2 {
-        width: 100%;
-    }
-}
-
-.checkbox:checked ~ .sidenav {
-    width: 15%;
-}
-
-.checkbox:checked ~ #main {
-    width: 15%;
-}
-.checkbox:checked ~ #main2 {
-    width: 15%;
 }
